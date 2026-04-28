@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soft Days — Vlog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="vlog-page">
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">soft <span>days</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="">Home</a></li>
+      <li><a href="travel.html" class="">Travel</a></li>
+      <li><a href="vlog.html" class="active">Vlog</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="study.html" class="">Chill Study</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="mobile-close" onclick="closeMenu()">✕</span>
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="travel.html" onclick="closeMenu()">Travel</a>
+    <a href="vlog.html" onclick="closeMenu()">Vlog</a>
+    <a href="work.html" onclick="closeMenu()">Work</a>
+    <a href="study.html" onclick="closeMenu()">Chill Study</a>
+  </div>
+
+  <main class="page-main">
+<section id="vlog">
+
+    <!-- ── Vlog Hero ── -->
+    <div class="vlog-hero">
+      <div class="vlog-hero-inner fade-in">
+        <div class="section-label">daily life</div>
+        <h2 class="section-title">My little <em>video diary</em></h2>
+        <p class="section-sub" style="margin:0 auto 2rem">
+          Cozy day-in-my-life vlogs, travel films, seasonal slow living, and
+          everything in between. Hit play and join me. 🎥
+        </p>
+        <div class="vlog-filters">
+          <div class="filter-pill active">All</div>
+          <div class="filter-pill">Day in my life</div>
+          <div class="filter-pill">Travel films</div>
+          <div class="filter-pill">Slow living</div>
+          <div class="filter-pill">Study with me</div>
+          <div class="filter-pill">Seasonal</div>
+        </div>
+      </div>
+    </div><!-- /vlog-hero -->
+
+    <!-- ── Vlog Content ── -->
+    <div class="vlog-content">
+
+      <!-- Featured Vlog -->
+      <div class="vlog-featured fade-in">
+        <div class="vlog-featured-video">
+          <div class="ph ph-blush" style="position:absolute;inset:0;height:100%">🎬</div>
+          <div class="play-button">
+            <div class="play-button-circle">▶</div>
+          </div>
+          <div class="duration-badge">14:32</div>
+        </div>
+        <div class="vlog-featured-body">
+          <span class="tag vlog">Day in my life</span>
+          <h3 class="vlog-card-title">A slow Sunday morning routine<br>in autumn 🍂</h3>
+          <p class="vlog-card-desc">
+            Woke up before sunrise, made cinnamon oat porridge, journaled by the
+            window, and spent the afternoon pressing leaves. This is the kind of
+            day I want to live over and over.
+          </p>
+          <div class="vlog-meta">
+            <span>🗓 Oct 2024</span>
+            <div class="vlog-dot"></div>
+            <span>14:32</span>
+            <div class="vlog-dot"></div>
+            <span>42k views</span>
+          </div>
+          <br>
+          <a href="#" class="btn btn-primary" style="margin-top:0.5rem">Watch now ▶</a>
+        </div>
+      </div>
+
+      <!-- Vlog Grid -->
+      <div class="section-label" style="margin-bottom:1rem; margin-top:3rem">recent videos</div>
+      <div class="vlog-grid">
+
+        <!-- Vlog Card 1 -->
+        <div class="card vlog-grid-card fade-in">
+          <div class="video-thumb">
+            <div class="ph ph-sage" style="position:absolute;inset:0;height:100%">🌿</div>
+            <div class="play-sm"><div class="play-sm-circle">▶</div></div>
+            <span class="duration-badge">8:14</span>
+          </div>
+          <div class="card-body">
+            <span class="tag vlog">Slow living</span>
+            <div class="card-title">Morning pages &amp; a gentle start</div>
+            <div class="card-meta">Sep 2024 · 8:14 · 28k views</div>
+          </div>
+        </div>
+
+        <!-- Vlog Card 2 -->
+        <div class="card vlog-grid-card fade-in" style="transition-delay:0.1s">
+          <div class="video-thumb">
+            <div class="ph ph-sky" style="position:absolute;inset:0;height:100%">✈️</div>
+            <div class="play-sm"><div class="play-sm-circle">▶</div></div>
+            <span class="duration-badge">22:06</span>
+          </div>
+          <div class="card-body">
+            <span class="tag travel">Travel film</span>
+            <div class="card-title">Solo trip to Kyoto — cinematic vlog</div>
+            <div class="card-meta">March 2025 · 22:06 · 91k views</div>
+          </div>
+        </div>
+
+        <!-- Vlog Card 3 -->
+        <div class="card vlog-grid-card fade-in" style="transition-delay:0.2s">
+          <div class="video-thumb">
+            <div class="ph ph-sand" style="position:absolute;inset:0;height:100%">📖</div>
+            <div class="play-sm"><div class="play-sm-circle">▶</div></div>
+            <span class="duration-badge">32:00</span>
+          </div>
+          <div class="card-body">
+            <span class="tag study">Study with me</span>
+            <div class="card-title">4-hour deep work session with lo-fi</div>
+            <div class="card-meta">Aug 2024 · 32:00 · 65k views</div>
+          </div>
+        </div>
+
+        <!-- Vlog Card 4 -->
+        <div class="card vlog-grid-card fade-in">
+          <div class="video-thumb">
+            <div class="ph ph-warm" style="position:absolute;inset:0;height:100%">🍵</div>
+            <div class="play-sm"><div class="play-sm-circle">▶</div></div>
+            <span class="duration-badge">11:45</span>
+          </div>
+          <div class="card-body">
+            <span class="tag vlog">Day in my life</span>
+            <div class="card-title">A very cozy autumn weekend vlog</div>
+            <div class="card-meta">Nov 2024 · 11:45 · 34k views</div>
+          </div>
+        </div>
+
+        <!-- Vlog Card 5 -->
+        <div class="card vlog-grid-card fade-in" style="transition-delay:0.1s">
+          <div class="video-thumb">
+            <div class="ph ph-blush" style="position:absolute;inset:0;height:100%">🌸</div>
+            <div class="play-sm"><div class="play-sm-circle">▶</div></div>
+            <span class="duration-badge">17:20</span>
+          </div>
+          <div class="card-body">
+            <span class="tag vlog">Seasonal</span>
+            <div class="card-title">Spring reset: declutter &amp; refresh</div>
+            <div class="card-meta">April 2024 · 17:20 · 52k views</div>
+          </div>
+        </div>
+
+        <!-- Vlog Card 6 -->
+        <div class="card vlog-grid-card fade-in" style="transition-delay:0.2s">
+          <div class="video-thumb">
+            <div class="ph ph-rose" style="position:absolute;inset:0;height:100%">🌙</div>
+            <div class="play-sm"><div class="play-sm-circle">▶</div></div>
+            <span class="duration-badge">9:55</span>
+          </div>
+          <div class="card-body">
+            <span class="tag vlog">Slow living</span>
+            <div class="card-title">My evening wind-down routine</div>
+            <div class="card-meta">Dec 2024 · 9:55 · 47k views</div>
+          </div>
+        </div>
+
+      </div><!-- /vlog-grid -->
+
+      <div style="text-align:center; margin-top:3rem">
+        <a href="#" class="btn btn-outline">See all videos →</a>
+      </div>
+
+    </div><!-- /vlog-content -->
+
+  </section>
+  <!-- /VLOG SECTION -->
+  </main>
+
+<!-- ============================================================
+       NEWSLETTER / CTA BANNER
+       ============================================================ -->
+  <div class="newsletter-banner">
+    <div class="newsletter-inner fade-in">
+      <h2 class="newsletter-title">Stay in the <em>loop</em><br>lovely reader</h2>
+      <p class="newsletter-sub">
+        New posts, travel diaries, playlists, and cozy updates —
+        straight to your inbox, never spam. 🌸
+      </p>
+      <div class="newsletter-form">
+        <input class="newsletter-input" type="email" placeholder="your@email.com"/>
+        <button class="newsletter-btn">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <!-- Brand col -->
+        <div>
+          <div class="footer-logo">soft <em>days</em></div>
+          <p class="footer-tagline">
+            A personal corner of the internet about slow travel,
+            cozy vlogs, and gentle productivity. Made with ☕ &amp; 🌿
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">▶️</a>
+            <a href="#" class="social-link">✉️</a>
+            <a href="#" class="social-link">🐦</a>
+          </div>
+        </div>
+
+        <!-- Explore col -->
+        <div>
+          <div class="footer-col-title">Explore</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="vlog.html">Vlog</a></li>
+            <li><a href="work.html">Work</a></li>
+      <li><a href="study.html">Chill Study</a></li>
+          </ul>
+        </div>
+
+        <!-- Study resources col -->
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="#">Notion Templates</a></li>
+            <li><a href="#">Study Playlists</a></li>
+            <li><a href="#">Travel Guides</a></li>
+            <li><a href="#">Reading List</a></li>
+          </ul>
+        </div>
+
+        <!-- Info col -->
+        <div>
+          <div class="footer-col-title">Info</div>
+          <ul class="footer-links">
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Work with me</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-top -->
+
+      <div class="footer-bottom">
+        <span>© 2025 Soft Days. Made with love &amp; lo-fi music.</span>
+        <span>Designed to inspire slow, intentional living ✨</span>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

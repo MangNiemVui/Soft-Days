@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soft Days — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">soft <span>days</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="travel.html" class="">Travel</a></li>
+      <li><a href="vlog.html" class="">Vlog</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="study.html" class="">Chill Study</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="mobile-close" onclick="closeMenu()">✕</span>
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="travel.html" onclick="closeMenu()">Travel</a>
+    <a href="vlog.html" onclick="closeMenu()">Vlog</a>
+    <a href="work.html" onclick="closeMenu()">Work</a>
+    <a href="study.html" onclick="closeMenu()">Chill Study</a>
+  </div>
+
+  <main class="page-main">
+<section id="home">
+
+    <!-- ── Hero ── -->
+    <div class="hero">
+      <div class="hero-text fade-in">
+        <div class="hero-eyebrow">a lifestyle journal</div>
+        <h1 class="hero-title">
+          Living life<br>
+          <em>softly &amp; slowly</em>
+        </h1>
+        <p class="hero-desc">
+          A cozy corner of the internet where I share travels, daily vlogs,
+          study sessions, and all the little things that make life beautiful.
+        </p>
+        <div class="hero-cta">
+          <a href="travel.html" class="btn btn-primary">Explore ↗</a>
+          <a href="study.html"  class="btn btn-outline">Chill Study</a>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-in" style="transition-delay:0.15s">
+        <div class="hero-img-main">
+          <div class="ph ph-blush">☕</div>
+        </div>
+        <div class="hero-img-accent">
+          <div class="ph ph-sage">🌿</div>
+        </div>
+        <div class="hero-chip">✨ New post this week</div>
+      </div>
+    </div><!-- /hero -->
+
+    <!-- ── About / Intro ── -->
+    <div class="home-intro">
+      <div class="home-intro-inner">
+        <div class="home-intro-img fade-in">
+          <div class="ph ph-warm">🌸</div>
+        </div>
+        <div class="home-intro-text fade-in" style="transition-delay:0.1s">
+          <div class="section-label">about this space</div>
+          <h2 class="section-title">Hello, I'm <em>so glad</em><br>you're here</h2>
+          <p class="home-intro-detail">
+            This website is my personal little diary — a place where I document
+            travels to dreamy destinations, share snippets of my everyday life
+            through vlogs, and create a cozy study corner for anyone who needs a
+            calm and productive space.
+          </p>
+          <p class="home-intro-detail">
+            Whether you're here for travel inspiration, a vlog to watch on a
+            rainy afternoon, or some gentle study motivation — welcome. Grab a
+            warm drink and stay a while. 🍵
+          </p>
+          <a href="travel.html" class="btn btn-outline">Start Exploring →</a>
+        </div>
+      </div>
+    </div><!-- /home-intro -->
+
+    <!-- ── Quick Links to Pages ── -->
+    <div class="home-links">
+      <div class="section-label">explore</div>
+      <h2 class="section-title">What would you<br><em>like to see?</em></h2>
+      <div class="home-links-grid">
+
+        <!-- Link to Travel -->
+        <a href="travel.html" class="link-card travel fade-in">
+          <div class="link-card-bg"></div>
+          <div class="link-card-content">
+            <div class="link-card-icon">🗺️</div>
+            <div class="link-card-label">explore</div>
+            <div class="link-card-title">Travel</div>
+            <div class="link-card-arrow">↗</div>
+          </div>
+        </a>
+
+        <!-- Link to Vlog -->
+        <a href="vlog.html" class="link-card vlog fade-in" style="transition-delay:0.1s">
+          <div class="link-card-bg"></div>
+          <div class="link-card-content">
+            <div class="link-card-icon">🎬</div>
+            <div class="link-card-label">watch</div>
+            <div class="link-card-title">Vlog</div>
+            <div class="link-card-arrow">↗</div>
+          </div>
+        </a>
+
+        <!-- Link to Chill Study -->
+        <a href="work.html" class="link-card work fade-in" style="transition-delay:0.2s">
+          <div class="link-card-bg"></div>
+          <div class="link-card-content">
+            <div class="link-card-icon">💼</div>
+            <div class="link-card-label">plan</div>
+            <div class="link-card-title">Work</div>
+            <div class="link-card-arrow">↗</div>
+          </div>
+        </a>
+
+        <a href="study.html" class="link-card study fade-in" style="transition-delay:0.3s">
+          <div class="link-card-bg"></div>
+          <div class="link-card-content">
+            <div class="link-card-icon">📚</div>
+            <div class="link-card-label">focus</div>
+            <div class="link-card-title">Chill Study</div>
+            <div class="link-card-arrow">↗</div>
+          </div>
+        </a>
+
+      </div>
+    </div><!-- /home-links -->
+
+    <!-- ── Featured Content ── -->
+    <div class="home-featured">
+      <div class="home-featured-inner">
+        <div class="featured-header fade-in">
+          <div>
+            <div class="section-label">latest</div>
+            <h2 class="section-title">Featured <em>posts</em></h2>
+          </div>
+          <a href="travel.html" class="btn btn-outline">See all →</a>
+        </div>
+
+        <div class="grid-3">
+
+          <!-- Featured Card 1 — Travel -->
+          <div class="card fade-in">
+            <div class="featured-card-img">
+              <div class="ph ph-sage">🌿</div>
+            </div>
+            <div class="featured-card-body">
+              <span class="tag travel">Travel</span>
+              <div class="featured-card-title">A slow morning in Kyoto's old town</div>
+              <div class="featured-card-desc">
+                Cobblestone alleys, matcha in hand, and the gentle sound of temple bells.
+              </div>
+              <div class="featured-card-meta">March 2025 · 4 min read</div>
+            </div>
+          </div>
+
+          <!-- Featured Card 2 — Vlog -->
+          <div class="card fade-in" style="transition-delay:0.1s">
+            <div class="featured-card-img">
+              <div class="ph ph-blush">🎬</div>
+            </div>
+            <div class="featured-card-body">
+              <span class="tag vlog">Vlog</span>
+              <div class="featured-card-title">A cozy rainy day at home | daily vlog</div>
+              <div class="featured-card-desc">
+                Candles, homemade soup, journaling, and the best kind of slow Sunday.
+              </div>
+              <div class="featured-card-meta">Feb 2025 · 12 min watch</div>
+            </div>
+          </div>
+
+          <!-- Featured Card 3 — Study -->
+          <div class="card fade-in" style="transition-delay:0.2s">
+            <div class="featured-card-img">
+              <div class="ph ph-sky">📖</div>
+            </div>
+            <div class="featured-card-body">
+              <span class="tag study">Chill Study</span>
+              <div class="featured-card-title">My favourite lo-fi playlists for deep work</div>
+              <div class="featured-card-desc">
+                Curated music that helps me stay focused without feeling stressed.
+              </div>
+              <div class="featured-card-meta">Jan 2025 · 3 min read</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- /home-featured -->
+
+  </section>
+  <!-- /HOME SECTION -->
+  </main>
+
+<!-- ============================================================
+       NEWSLETTER / CTA BANNER
+       ============================================================ -->
+  <div class="newsletter-banner">
+    <div class="newsletter-inner fade-in">
+      <h2 class="newsletter-title">Stay in the <em>loop</em><br>lovely reader</h2>
+      <p class="newsletter-sub">
+        New posts, travel diaries, playlists, and cozy updates —
+        straight to your inbox, never spam. 🌸
+      </p>
+      <div class="newsletter-form">
+        <input class="newsletter-input" type="email" placeholder="your@email.com"/>
+        <button class="newsletter-btn">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <!-- Brand col -->
+        <div>
+          <div class="footer-logo">soft <em>days</em></div>
+          <p class="footer-tagline">
+            A personal corner of the internet about slow travel,
+            cozy vlogs, and gentle productivity. Made with ☕ &amp; 🌿
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">▶️</a>
+            <a href="#" class="social-link">✉️</a>
+            <a href="#" class="social-link">🐦</a>
+          </div>
+        </div>
+
+        <!-- Explore col -->
+        <div>
+          <div class="footer-col-title">Explore</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="vlog.html">Vlog</a></li>
+            <li><a href="work.html">Work</a></li>
+      <li><a href="study.html">Chill Study</a></li>
+          </ul>
+        </div>
+
+        <!-- Study resources col -->
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="#">Notion Templates</a></li>
+            <li><a href="#">Study Playlists</a></li>
+            <li><a href="#">Travel Guides</a></li>
+            <li><a href="#">Reading List</a></li>
+          </ul>
+        </div>
+
+        <!-- Info col -->
+        <div>
+          <div class="footer-col-title">Info</div>
+          <ul class="footer-links">
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Work with me</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-top -->
+
+      <div class="footer-bottom">
+        <span>© 2025 Soft Days. Made with love &amp; lo-fi music.</span>
+        <span>Designed to inspire slow, intentional living ✨</span>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

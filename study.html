@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soft Days — Chill Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="study-page">
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">soft <span>days</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="">Home</a></li>
+      <li><a href="travel.html" class="">Travel</a></li>
+      <li><a href="vlog.html" class="">Vlog</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="study.html" class="active">Chill Study</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="mobile-close" onclick="closeMenu()">✕</span>
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="travel.html" onclick="closeMenu()">Travel</a>
+    <a href="vlog.html" onclick="closeMenu()">Vlog</a>
+    <a href="work.html" onclick="closeMenu()">Work</a>
+    <a href="study.html" onclick="closeMenu()">Chill Study</a>
+  </div>
+
+  <main class="page-main">
+<section id="study">
+
+    <!-- ── Study Hero ── -->
+    <div class="study-hero">
+      <div class="study-hero-inner">
+        <div class="fade-in">
+          <div class="section-label">focus &amp; flow</div>
+          <h2 class="section-title">Your cozy<br><em>study corner</em></h2>
+          <p class="section-sub">
+            Tips, playlists, templates, and gentle motivation for anyone who
+            wants to study in a calm and joyful way. You've got this. 🌿
+          </p>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap">
+            <a href="#" class="btn btn-primary">Start studying</a>
+            <a href="#" class="btn btn-outline">Browse playlists 🎵</a>
+          </div>
+        </div>
+
+        <div class="study-ambience fade-in" style="transition-delay:0.15s">
+          <div class="study-desk-card">
+            <div class="ph ph-sky" style="height:100%">📚</div>
+          </div>
+          <div class="study-playlist-widget">
+            <div class="playlist-label">🎵 now playing</div>
+            <div class="playlist-track">Rainy Day Café</div>
+            <div class="playlist-artist">Lo-fi Chill Collective</div>
+            <div class="playlist-bar">
+              <div class="playlist-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /study-hero -->
+
+    <!-- ── Study Content ── -->
+    <div class="study-content">
+
+      <!-- Big card + side cards grid -->
+      <div class="study-grid fade-in">
+
+        <!-- Featured Study Post -->
+        <div class="study-big-card">
+          <div class="study-big-card-img">
+            <div class="ph ph-sky" style="height:100%">🖊️</div>
+          </div>
+          <div class="study-big-card-body">
+            <span class="tag study">Study tips</span>
+            <h3 class="study-big-card-title">The Pomodoro technique —<br>how I actually made it work for me</h3>
+            <p style="font-size:0.84rem; color:var(--muted); line-height:1.8; margin:0.7rem 0 1.2rem">
+              Everyone talks about Pomodoro but few mention what to do during the
+              breaks. Here's my personal spin that turned 20-minute sprints into
+              genuine deep work sessions.
+            </p>
+            <a href="#" class="btn btn-outline">Read →</a>
+          </div>
+        </div>
+
+        <!-- Side cards -->
+        <div class="study-side-cards">
+
+          <div class="study-side-card fade-in">
+            <div class="study-side-icon">📓</div>
+            <div class="study-side-title">Free notion templates</div>
+            <div class="study-side-desc">
+              Minimalist study planner, habit tracker, and weekly review — all free
+              to duplicate.
+            </div>
+          </div>
+
+          <div class="study-side-card fade-in" style="transition-delay:0.1s">
+            <div class="study-side-icon">✏️</div>
+            <div class="study-side-title">Note-taking methods guide</div>
+            <div class="study-side-desc">
+              Cornell, mind maps, sketchnotes — which works best for your learning
+              style?
+            </div>
+          </div>
+
+          <div class="study-side-card fade-in" style="transition-delay:0.2s">
+            <div class="study-side-icon">🕯️</div>
+            <div class="study-side-title">Create your study atmosphere</div>
+            <div class="study-side-desc">
+              Lighting, scents, temperature — small tweaks that make a huge
+              difference in focus.
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /study-grid -->
+
+      <!-- Study Tips Row -->
+      <div class="section-label" style="margin-bottom:1.2rem; margin-top:1rem">quick tips</div>
+      <div class="study-tips-row">
+        <div class="tip-card fade-in">
+          <div class="tip-icon">⏱️</div>
+          <div class="tip-title">Time blocking</div>
+          <div class="tip-desc">Group similar tasks together for less mental switching.</div>
+        </div>
+        <div class="tip-card fade-in" style="transition-delay:0.08s">
+          <div class="tip-icon">🌿</div>
+          <div class="tip-title">Take real breaks</div>
+          <div class="tip-desc">Step outside, stretch, breathe. 5 mins away saves hours.</div>
+        </div>
+        <div class="tip-card fade-in" style="transition-delay:0.16s">
+          <div class="tip-icon">📵</div>
+          <div class="tip-title">Phone-free blocks</div>
+          <div class="tip-desc">Even 30 minutes without your phone changes everything.</div>
+        </div>
+        <div class="tip-card fade-in" style="transition-delay:0.24s">
+          <div class="tip-icon">🍵</div>
+          <div class="tip-title">Warm drink ritual</div>
+          <div class="tip-desc">A small ritual signals your brain it's time to focus.</div>
+        </div>
+      </div>
+
+    </div><!-- /study-content -->
+
+    <!-- ── Chill Playlists ── -->
+    <div class="study-playlists">
+      <div class="study-playlists-inner">
+        <div class="fade-in">
+          <div class="section-label">🎵 curated playlists</div>
+          <h2 class="section-title">Music to <em>focus &amp; flow</em></h2>
+          <p class="section-sub">
+            Handpicked playlists for every kind of study session — deep work,
+            light reading, creative projects, and everything in between.
+          </p>
+        </div>
+        <div class="playlist-cards">
+
+          <div class="playlist-card fade-in">
+            <div class="playlist-card-art">
+              <div class="ph ph-sky" style="border-radius:var(--radius-sm)">🌧️</div>
+            </div>
+            <div class="playlist-card-title">Rainy Day Focus</div>
+            <div class="playlist-card-meta">Lo-fi · 2h 14min</div>
+          </div>
+
+          <div class="playlist-card fade-in" style="transition-delay:0.08s">
+            <div class="playlist-card-art">
+              <div class="ph ph-sage" style="border-radius:var(--radius-sm)">🌿</div>
+            </div>
+            <div class="playlist-card-title">Forest Café Ambience</div>
+            <div class="playlist-card-meta">Ambient · 3h 00min</div>
+          </div>
+
+          <div class="playlist-card fade-in" style="transition-delay:0.16s">
+            <div class="playlist-card-art">
+              <div class="ph ph-warm" style="border-radius:var(--radius-sm)">☀️</div>
+            </div>
+            <div class="playlist-card-title">Morning Clarity</div>
+            <div class="playlist-card-meta">Instrumental · 1h 45min</div>
+          </div>
+
+          <div class="playlist-card fade-in" style="transition-delay:0.24s">
+            <div class="playlist-card-art">
+              <div class="ph ph-rose" style="border-radius:var(--radius-sm)">🌙</div>
+            </div>
+            <div class="playlist-card-title">Late Night Deep Work</div>
+            <div class="playlist-card-meta">Lo-fi Jazz · 2h 30min</div>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- /study-playlists -->
+
+  </section>
+  <!-- /CHILL STUDY SECTION -->
+  </main>
+
+<!-- ============================================================
+       NEWSLETTER / CTA BANNER
+       ============================================================ -->
+  <div class="newsletter-banner">
+    <div class="newsletter-inner fade-in">
+      <h2 class="newsletter-title">Stay in the <em>loop</em><br>lovely reader</h2>
+      <p class="newsletter-sub">
+        New posts, travel diaries, playlists, and cozy updates —
+        straight to your inbox, never spam. 🌸
+      </p>
+      <div class="newsletter-form">
+        <input class="newsletter-input" type="email" placeholder="your@email.com"/>
+        <button class="newsletter-btn">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <!-- Brand col -->
+        <div>
+          <div class="footer-logo">soft <em>days</em></div>
+          <p class="footer-tagline">
+            A personal corner of the internet about slow travel,
+            cozy vlogs, and gentle productivity. Made with ☕ &amp; 🌿
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">▶️</a>
+            <a href="#" class="social-link">✉️</a>
+            <a href="#" class="social-link">🐦</a>
+          </div>
+        </div>
+
+        <!-- Explore col -->
+        <div>
+          <div class="footer-col-title">Explore</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="vlog.html">Vlog</a></li>
+            <li><a href="work.html">Work</a></li>
+      <li><a href="study.html">Chill Study</a></li>
+          </ul>
+        </div>
+
+        <!-- Study resources col -->
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="#">Notion Templates</a></li>
+            <li><a href="#">Study Playlists</a></li>
+            <li><a href="#">Travel Guides</a></li>
+            <li><a href="#">Reading List</a></li>
+          </ul>
+        </div>
+
+        <!-- Info col -->
+        <div>
+          <div class="footer-col-title">Info</div>
+          <ul class="footer-links">
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Work with me</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-top -->
+
+      <div class="footer-bottom">
+        <span>© 2025 Soft Days. Made with love &amp; lo-fi music.</span>
+        <span>Designed to inspire slow, intentional living ✨</span>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

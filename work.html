@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soft Days — Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="work-page">
+
+
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">soft <span>days</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="">Home</a></li>
+      <li><a href="travel.html" class="">Travel</a></li>
+      <li><a href="vlog.html" class="">Vlog</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="study.html">Chill Study</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  
+
+  <main class="page-main">
+
+  <!-- ============================================================
+       WORK SECTION
+       ============================================================ -->
+  <section id="work">
+
+    <!-- Work Hero -->
+    <div class="work-hero">
+      <div class="work-hero-inner">
+        <div class="fade-in">
+          <div class="section-label">work &amp; projects</div>
+          <h2 class="section-title">My little<br><em>work desk</em></h2>
+          <p class="section-sub">
+            A clean space to organize projects, tasks, portfolio updates, notes,
+            goals, and anything related to work or creative productivity.
+          </p>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap">
+            <a href="#work-projects" class="btn btn-primary">View projects</a>
+            <a href="#work-notes" class="btn btn-outline">Read notes 📝</a>
+          </div>
+        </div>
+
+        <div class="work-visual fade-in" style="transition-delay:0.15s">
+          <div class="work-desk-card">
+            <div class="ph ph-sand" style="height:100%">💼</div>
+          </div>
+          <div class="work-widget">
+            <div class="playlist-label">current focus</div>
+            <div class="playlist-track">Website redesign</div>
+            <div class="playlist-artist">Planning · Writing · Building</div>
+            <div class="playlist-bar">
+              <div class="playlist-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Projects -->
+    <div class="work-content" id="work-projects">
+      <div class="fade-in">
+        <div class="section-label">featured work</div>
+        <h2 class="section-title">Projects &amp; <em>tasks</em></h2>
+        <p class="section-sub">
+          Use this page to add your work updates, portfolio projects, task lists,
+          client work, study/work goals, or weekly plans.
+        </p>
+      </div>
+
+      <div class="work-grid">
+
+        <!-- Work Card 1 -->
+        <div class="card work-card fade-in">
+          <div class="featured-card-img">
+            <div class="ph ph-sand">🗂️</div>
+          </div>
+          <div class="featured-card-body">
+            <span class="tag work">Project</span>
+            <div class="featured-card-title">Personal website redesign</div>
+            <div class="featured-card-desc">
+              Update layout, split pages clearly, organize content, and prepare for publishing.
+            </div>
+            <div class="featured-card-meta">Status: In progress</div>
+          </div>
+        </div>
+
+        <!-- Work Card 2 -->
+        <div class="card work-card fade-in" style="transition-delay:0.1s">
+          <div class="featured-card-img">
+            <div class="ph ph-warm">📌</div>
+          </div>
+          <div class="featured-card-body">
+            <span class="tag work">Task</span>
+            <div class="featured-card-title">Weekly content planning</div>
+            <div class="featured-card-desc">
+              Plan blog posts, vlog topics, study notes, and travel story ideas for this week.
+            </div>
+            <div class="featured-card-meta">Status: To do</div>
+          </div>
+        </div>
+
+        <!-- Work Card 3 -->
+        <div class="card work-card fade-in" style="transition-delay:0.2s">
+          <div class="featured-card-img">
+            <div class="ph ph-rose">💻</div>
+          </div>
+          <div class="featured-card-body">
+            <span class="tag work">Portfolio</span>
+            <div class="featured-card-title">Simple dashboard concept</div>
+            <div class="featured-card-desc">
+              A clean dashboard-style page with cards, notes, progress, and project highlights.
+            </div>
+            <div class="featured-card-meta">Status: Draft</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Work Notes -->
+    <div class="work-notes" id="work-notes">
+      <div class="work-notes-inner">
+        <div class="fade-in">
+          <div class="section-label">work notes</div>
+          <h2 class="section-title">Ideas, goals &amp; <em>planning</em></h2>
+        </div>
+
+        <div class="study-tips-row">
+          <div class="tip-card fade-in">
+            <div class="tip-icon">✅</div>
+            <div class="tip-title">Today tasks</div>
+            <div class="tip-desc">Write down 3 important tasks and finish them first.</div>
+          </div>
+          <div class="tip-card fade-in" style="transition-delay:0.08s">
+            <div class="tip-icon">🧠</div>
+            <div class="tip-title">Ideas</div>
+            <div class="tip-desc">Save small ideas here before turning them into full posts.</div>
+          </div>
+          <div class="tip-card fade-in" style="transition-delay:0.16s">
+            <div class="tip-icon">📅</div>
+            <div class="tip-title">Schedule</div>
+            <div class="tip-desc">Plan upload dates, work sessions, and weekly goals.</div>
+          </div>
+          <div class="tip-card fade-in" style="transition-delay:0.24s">
+            <div class="tip-icon">🌱</div>
+            <div class="tip-title">Growth</div>
+            <div class="tip-desc">Track what you learned and what you want to improve next.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- /WORK SECTION -->
+
+  </main>
+
+
+
+
+<!-- ============================================================
+       NEWSLETTER / CTA BANNER
+       ============================================================ -->
+  <div class="newsletter-banner">
+    <div class="newsletter-inner fade-in">
+      <h2 class="newsletter-title">Stay in the <em>loop</em><br>lovely reader</h2>
+      <p class="newsletter-sub">
+        New posts, travel diaries, playlists, and cozy updates —
+        straight to your inbox, never spam. 🌸
+      </p>
+      <div class="newsletter-form">
+        <input class="newsletter-input" type="email" placeholder="your@email.com"/>
+        <button class="newsletter-btn">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <!-- Brand col -->
+        <div>
+          <div class="footer-logo">soft <em>days</em></div>
+          <p class="footer-tagline">
+            A personal corner of the internet about slow travel,
+            cozy vlogs, and gentle productivity. Made with ☕ &amp; 🌿
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">▶️</a>
+            <a href="#" class="social-link">✉️</a>
+            <a href="#" class="social-link">🐦</a>
+          </div>
+        </div>
+
+        <!-- Explore col -->
+        <div>
+          <div class="footer-col-title">Explore</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="vlog.html">Vlog</a></li>
+            <li><a href="work.html">Work</a></li>
+      <li><a href="study.html">Chill Study</a></li>
+          </ul>
+        </div>
+
+        <!-- Study resources col -->
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="#">Notion Templates</a></li>
+            <li><a href="#">Study Playlists</a></li>
+            <li><a href="#">Travel Guides</a></li>
+            <li><a href="#">Reading List</a></li>
+          </ul>
+        </div>
+
+        <!-- Info col -->
+        <div>
+          <div class="footer-col-title">Info</div>
+          <ul class="footer-links">
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Work with me</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-top -->
+
+      <div class="footer-bottom">
+        <span>© 2025 Soft Days. Made with love &amp; lo-fi music.</span>
+        <span>Designed to inspire slow, intentional living ✨</span>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
+

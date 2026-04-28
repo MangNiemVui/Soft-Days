@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soft Days — Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="travel-page">
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">soft <span>days</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="">Home</a></li>
+      <li><a href="travel.html" class="active">Travel</a></li>
+      <li><a href="vlog.html" class="">Vlog</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="study.html" class="">Chill Study</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="mobile-close" onclick="closeMenu()">✕</span>
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="travel.html" onclick="closeMenu()">Travel</a>
+    <a href="vlog.html" onclick="closeMenu()">Vlog</a>
+    <a href="work.html" onclick="closeMenu()">Work</a>
+    <a href="study.html" onclick="closeMenu()">Chill Study</a>
+  </div>
+
+  <main class="page-main">
+<section id="travel">
+
+    <!-- ── Travel Hero ── -->
+    <div class="travel-hero">
+      <div class="travel-hero-inner">
+        <div class="fade-in">
+          <div class="section-label">wander far</div>
+          <h2 class="section-title">Travel <em>stories</em><br>&amp; adventures</h2>
+          <p class="section-sub">
+            Destinations near and far — honest travel stories, photography,
+            tips, and little moments worth remembering.
+          </p>
+          <div class="travel-stats">
+            <div class="stat-item">
+              <div class="stat-num">14</div>
+              <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">38</div>
+              <div class="stat-label">Stories</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Memories</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="travel-hero-visual fade-in" style="transition-delay:0.1s">
+          <div class="ph ph-sage tall" style="border-radius:var(--radius-md)">🗾</div>
+          <div class="ph ph-sand" style="border-radius:var(--radius-md)">🏔️</div>
+          <div class="ph ph-sky" style="border-radius:var(--radius-md)">🌊</div>
+        </div>
+      </div>
+    </div><!-- /travel-hero -->
+
+    <!-- ── Travel Posts ── -->
+    <div class="travel-posts">
+
+      <!-- Featured Travel Card (large) -->
+      <div class="travel-featured-card fade-in">
+        <div class="travel-featured-img">
+          <div class="ph ph-sage" style="height:100%">🇯🇵</div>
+        </div>
+        <div class="travel-featured-body">
+          <div class="destination-chip">📍 Kyoto, Japan</div>
+          <h3 class="travel-card-title">Two weeks in Japan:<br>temples, ramen &amp; golden hour</h3>
+          <p class="travel-card-desc">
+            From the deer of Nara to the neon glow of Shinjuku, this trip was
+            everything I dreamed Japan would be and so much more. Here's my full
+            guide with itinerary, budget, and honest tips.
+          </p>
+          <div class="travel-card-footer">
+            <span>🗓 March 2025</span>
+            <span>·</span>
+            <span>☁️ 18°C</span>
+            <span>·</span>
+            <span>8 min read</span>
+          </div>
+          <br>
+          <a href="#" class="btn btn-primary" style="margin-top:0.5rem">Read story →</a>
+        </div>
+      </div>
+
+      <!-- Travel Cards Grid -->
+      <div class="section-label" style="margin-bottom:1rem">more destinations</div>
+      <div class="travel-grid">
+
+        <!-- Travel Card 1 -->
+        <div class="card travel-grid-card fade-in">
+          <div class="card-img">
+            <div class="ph ph-sky">🇮🇹</div>
+          </div>
+          <div class="card-body">
+            <span class="tag travel">Italy</span>
+            <div class="card-title">Weekend in Rome: pasta &amp; ancient ruins</div>
+            <div class="card-meta">📍 Rome · Jan 2025</div>
+            <div class="card-desc">A dreamy 3-day itinerary through the eternal city.</div>
+          </div>
+        </div>
+
+        <!-- Travel Card 2 -->
+        <div class="card travel-grid-card fade-in" style="transition-delay:0.1s">
+          <div class="card-img">
+            <div class="ph ph-sand">🇹🇭</div>
+          </div>
+          <div class="card-body">
+            <span class="tag travel">Thailand</span>
+            <div class="card-title">Chiang Mai: temples, night markets &amp; elephants</div>
+            <div class="card-meta">📍 Chiang Mai · Nov 2024</div>
+            <div class="card-desc">Everything you need to know for a mindful trip north.</div>
+          </div>
+        </div>
+
+        <!-- Travel Card 3 -->
+        <div class="card travel-grid-card fade-in" style="transition-delay:0.2s">
+          <div class="card-img">
+            <div class="ph ph-blush">🇵🇹</div>
+          </div>
+          <div class="card-body">
+            <span class="tag travel">Portugal</span>
+            <div class="card-title">Lisbon on a budget: the complete slow guide</div>
+            <div class="card-meta">📍 Lisbon · Aug 2024</div>
+            <div class="card-desc">Tiles, pastéis, and golden light — Lisbon stole my heart.</div>
+          </div>
+        </div>
+
+        <!-- Travel Card 4 -->
+        <div class="card travel-grid-card fade-in">
+          <div class="card-img">
+            <div class="ph ph-sage">🇻🇳</div>
+          </div>
+          <div class="card-body">
+            <span class="tag travel">Vietnam</span>
+            <div class="card-title">Hội An: the most charming town in Southeast Asia</div>
+            <div class="card-meta">📍 Hội An · July 2024</div>
+            <div class="card-desc">Lanterns, bánh mì, and bicycle rides through rice fields.</div>
+          </div>
+        </div>
+
+        <!-- Travel Card 5 -->
+        <div class="card travel-grid-card fade-in" style="transition-delay:0.1s">
+          <div class="card-img">
+            <div class="ph ph-warm">🇳🇴</div>
+          </div>
+          <div class="card-body">
+            <span class="tag travel">Norway</span>
+            <div class="card-title">Chasing the Northern Lights in Tromsø</div>
+            <div class="card-meta">📍 Tromsø · Feb 2024</div>
+            <div class="card-desc">Frozen fingers, hot cocoa, and the sky on fire with aurora.</div>
+          </div>
+        </div>
+
+        <!-- Travel Card 6 -->
+        <div class="card travel-grid-card fade-in" style="transition-delay:0.2s">
+          <div class="card-img">
+            <div class="ph ph-sky">🇬🇷</div>
+          </div>
+          <div class="card-body">
+            <span class="tag travel">Greece</span>
+            <div class="card-title">Santorini sunsets &amp; hidden Aegean coves</div>
+            <div class="card-meta">📍 Santorini · June 2024</div>
+            <div class="card-desc">Beyond the famous views — quieter corners of Santorini.</div>
+          </div>
+        </div>
+
+      </div><!-- /travel-grid -->
+
+      <div style="text-align:center; margin-top:3rem">
+        <a href="#" class="btn btn-outline">Load more destinations →</a>
+      </div>
+
+    </div><!-- /travel-posts -->
+
+  </section>
+  <!-- /TRAVEL SECTION -->
+  </main>
+
+<!-- ============================================================
+       NEWSLETTER / CTA BANNER
+       ============================================================ -->
+  <div class="newsletter-banner">
+    <div class="newsletter-inner fade-in">
+      <h2 class="newsletter-title">Stay in the <em>loop</em><br>lovely reader</h2>
+      <p class="newsletter-sub">
+        New posts, travel diaries, playlists, and cozy updates —
+        straight to your inbox, never spam. 🌸
+      </p>
+      <div class="newsletter-form">
+        <input class="newsletter-input" type="email" placeholder="your@email.com"/>
+        <button class="newsletter-btn">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <!-- Brand col -->
+        <div>
+          <div class="footer-logo">soft <em>days</em></div>
+          <p class="footer-tagline">
+            A personal corner of the internet about slow travel,
+            cozy vlogs, and gentle productivity. Made with ☕ &amp; 🌿
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">▶️</a>
+            <a href="#" class="social-link">✉️</a>
+            <a href="#" class="social-link">🐦</a>
+          </div>
+        </div>
+
+        <!-- Explore col -->
+        <div>
+          <div class="footer-col-title">Explore</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="vlog.html">Vlog</a></li>
+            <li><a href="work.html">Work</a></li>
+      <li><a href="study.html">Chill Study</a></li>
+          </ul>
+        </div>
+
+        <!-- Study resources col -->
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="#">Notion Templates</a></li>
+            <li><a href="#">Study Playlists</a></li>
+            <li><a href="#">Travel Guides</a></li>
+            <li><a href="#">Reading List</a></li>
+          </ul>
+        </div>
+
+        <!-- Info col -->
+        <div>
+          <div class="footer-col-title">Info</div>
+          <ul class="footer-links">
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Work with me</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-top -->
+
+      <div class="footer-bottom">
+        <span>© 2025 Soft Days. Made with love &amp; lo-fi music.</span>
+        <span>Designed to inspire slow, intentional living ✨</span>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
